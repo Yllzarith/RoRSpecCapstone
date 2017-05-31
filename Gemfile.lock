@@ -43,7 +43,7 @@ GEM
     erubis (2.7.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    i18n (0.8.1)
+    i18n (0.8.4)
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
@@ -58,11 +58,8 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.2)
     multi_json (1.12.1)
-    nokogiri (1.7.2)
-      mini_portile2 (~> 2.1.0)
     nokogiri (1.7.2-x86-mingw32)
       mini_portile2 (~> 2.1.0)
-    pg (0.20.0)
     pg (0.20.0-x86-mingw32)
     rack (1.6.8)
     rack-test (0.6.3)
@@ -129,7 +126,6 @@ GEM
       tzinfo (>= 1.0.0)
 
 PLATFORMS
-  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -142,4 +138,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.13.6
+   1.13.2
