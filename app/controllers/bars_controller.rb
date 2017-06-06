@@ -6,13 +6,15 @@ class BarsController < ApplicationController
   def index
     @bars = Bar.all
 
-    render json: @bars
+    # Commented per lecture RDBMS-backed Resource to delegate object render to scaffolded view.
+    #render json: @foo
   end
 
   # GET /bars/1
   # GET /bars/1.json
   def show
-    render json: @bar
+    # Commented per lecture RDBMS-backed Resource to delegate object render to scaffolded view.
+    #render json: @foo
   end
 
   # POST /bars
@@ -21,7 +23,9 @@ class BarsController < ApplicationController
     @bar = Bar.new(bar_params)
 
     if @bar.save
-      render json: @bar, status: :created, location: @bar
+      # Commented per lecture RDBMS-backed Resource to delegate object render to scaffolded view.
+      #render json: @bar, status: :created, location: @bar
+      render :show, status: :created, location: @bar
     else
       render json: @bar.errors, status: :unprocessable_entity
     end
