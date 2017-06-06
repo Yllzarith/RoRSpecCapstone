@@ -19,7 +19,7 @@ module Myapp
   class Application < Rails::Application
     # From http://edgeguides.rubyonrails.org/api_app.html:
     config.api_only = true
-    
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -31,6 +31,13 @@ module Myapp
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Mongoid bootstrap.
+    Mongoid.load!('./config/mongoid.yml')
+
+    # Config ORM default.
+    config.generators {|g| g.orm :active_record}
+    # config.generators {|g| g.orm :mongoid}
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
