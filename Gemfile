@@ -26,6 +26,7 @@ end
 
 group :production do
   gem 'rails_12factor', '~>0.0', '>= 0.0.3'
+  gem 'puma', '~>3.6', '>=3.6.0', :platforms=>:ruby
 end
 
 gem 'pg', '~>0.19', '>=0.19.0'
