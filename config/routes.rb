@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  # Limited to GET routes only per note in assignment after step 9.
   scope :api, defaults: {format: :json} do
-      end
+    resources :states, only: [:index, :show]
+    resources :cities, only: [:index, :show]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
