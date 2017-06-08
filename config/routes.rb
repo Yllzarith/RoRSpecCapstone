@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   scope :api, defaults: {format: :json} do
-    resources :foos, except: [:new, :edit]
-    resources :bars, except: [:new, :edit]
-  end
+      end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
