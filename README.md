@@ -1,1 +1,1 @@
-# Capstone Demo Application
+# My Capstone Assignments Repository
